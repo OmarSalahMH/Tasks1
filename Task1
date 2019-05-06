@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int  skipper(int i,int s,int x)
+{
+    printf("Pleas enter the number:\n");
+    scanf("%i",&x);
+
+    printf("Please enter the skipped:\n");
+    scanf("%i",&s);
+
+          for (i=1;i<=x;i++)
+          {
+                 if (i%s>0)
+                 {
+                 printf("%i\n",i);
+                 }
+          }
+          return 0;
+}
+
+int main()
+{
+    int i;
+    int s;
+    int x;
+
+    skipper (i,s,x);
+
+    return 0;
+}
